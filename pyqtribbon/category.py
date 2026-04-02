@@ -1,6 +1,6 @@
 import typing
 
-from qtpy import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 from .constants import RibbonCategoryStyle
 from .panel import RibbonPanel
@@ -34,7 +34,7 @@ class RibbonCategoryScrollAreaContents(QtWidgets.QFrame):
 class RibbonCategoryLayoutWidget(QtWidgets.QFrame):
     """The category layout widget's category scroll area to arrange the widgets in the category."""
 
-    displayOptionsButtonClicked = QtCore.Signal()
+    displayOptionsButtonClicked = QtCore.pyqtSignal()
 
     def __init__(self, parent=None):
         """Create a new category layout widget.

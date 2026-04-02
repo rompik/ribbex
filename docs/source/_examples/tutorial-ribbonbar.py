@@ -1,8 +1,8 @@
 import sys
 
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QFont, QIcon
-from PyQt5.QtWidgets import QApplication, QLabel, QVBoxLayout, QWidget
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QFont, QIcon
+from PyQt6.QtWidgets import QApplication, QLabel, QVBoxLayout, QWidget
 
 from pyqtribbon import RibbonBar
 from pyqtribbon.screenshotwindow import RibbonScreenShotWindow
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     # Display a label in the main window
     label = QLabel("Ribbon Test Window")
     label.setFont(QFont("Arial", 20))
-    label.setAlignment(Qt.AlignCenter)
+    label.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
     # Add the ribbon bar and label to the layout
     layout.addWidget(label, 1)
@@ -42,4 +42,4 @@ if __name__ == "__main__":
     # Show the window
     window.resize(1800, 350)  # type: ignore
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

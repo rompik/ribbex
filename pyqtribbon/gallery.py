@@ -1,6 +1,6 @@
 import typing
 
-from qtpy import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 from .menu import RibbonPermanentMenu
 from .separator import RibbonHorizontalSeparator
@@ -135,15 +135,15 @@ class RibbonGallery(QtWidgets.QFrame):
         self._popupLayout.addWidget(RibbonHorizontalSeparator())
 
         self._popupMenu = RibbonPermanentMenu()
-        self._popupMenu.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)  # type: ignore
+        self._popupMenu.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Minimum)  # type: ignore
         self._popupMenu.actionAdded.connect(self._handlePopupAction)
         self._popupLayout.addWidget(self._popupMenu)
 
         self._moreButton.clicked.connect(self.showPopup)  # type: ignore
 
-    def _handlePopupAction(self, action: QtWidgets.QAction) -> None:
+    def _handlePopupAction(self, action: QtGui.QAction) -> None:
         """Handle a popup action."""
-        if isinstance(action, QtWidgets.QAction):
+        if isinstance(action, QtGui.QAction):
             action.triggered.connect(self.hidePopupWidget)  # type: ignore
 
     def resizeEvent(self, a0: QtGui.QResizeEvent) -> None:

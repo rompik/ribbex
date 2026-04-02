@@ -1,6 +1,6 @@
 from pytestqt.qtbot import QtBot
-from qtpy import QtCore, QtGui, QtWidgets
-from qtpy.QtGui import QIcon
+from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtGui import QIcon
 
 from pyqtribbon import Large, Normal, RibbonBar
 from pyqtribbon.ribbonbar import RibbonStyle
@@ -46,7 +46,7 @@ def test_main(qtbot: QtBot):
     panel.addVerticalSeparator()
     showCategoryButton3 = panel.addMediumToggleButton("Show/Hide Category 3", icon=QIcon("pyqtribbon/icons/close.png"))
     showCategoryButton45 = panel.addMediumToggleButton(
-        "Show/Hide Category 4/5", icon=QIcon("pyqtribbon/icons/close.png"), colSpan=2, alignment=QtCore.Qt.AlignLeft
+        "Show/Hide Category 4/5", icon=QIcon("pyqtribbon/icons/close.png"), colSpan=2, alignment=QtCore.Qt.AlignmentFlag.AlignLeft
     )
     panel.addLargeButton("Button 6", icon=QIcon("pyqtribbon/icons/close.png"))
     panel.addVerticalSeparator()
@@ -246,7 +246,7 @@ def test_main(qtbot: QtBot):
 
     label = QtWidgets.QLabel("Ribbon Test Window")
     label.setFont(QtGui.QFont("Arial", 20))
-    label.setAlignment(QtCore.Qt.AlignCenter)
+    label.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
     layout.addWidget(label, 1)
 
     window.resize(1800, 350)

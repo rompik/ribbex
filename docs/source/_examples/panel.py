@@ -1,9 +1,9 @@
 import sys
 
-from qtpy import QtGui
-from qtpy.QtCore import Qt
-from qtpy.QtGui import QIcon
-from qtpy.QtWidgets import QApplication, QLabel, QLineEdit, QMenu, QToolButton
+from PyQt6 import QtGui
+from PyQt6.QtCore import Qt
+from PyQt6.QtGui import QIcon
+from PyQt6.QtWidgets import QApplication, QLabel, QLineEdit, QMenu, QToolButton
 
 from pyqtribbon import RibbonBar
 from pyqtribbon.screenshotwindow import RibbonScreenShotWindow
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     panel.addMediumToggleButton("Show/Hide Category 2", icon=QIcon("python.png"))
     panel.addVerticalSeparator()
     panel.addMediumToggleButton("Show/Hide Category 3", icon=QIcon("python.png"))
-    panel.addMediumToggleButton("Show/Hide Category 4/5", icon=QIcon("python.png"), colSpan=2, alignment=Qt.AlignLeft)
+    panel.addMediumToggleButton("Show/Hide Category 4/5", icon=QIcon("python.png"), colSpan=2, alignment=Qt.AlignmentFlag.AlignLeft)
     panel.addLargeButton("Button 4", icon=QIcon("python.png"))
     panel.addVerticalSeparator()
     panel.addMediumButton("Button 5", icon=QIcon("python.png"))
@@ -57,4 +57,4 @@ if __name__ == "__main__":
     window.resize(1300, 250)
     window.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

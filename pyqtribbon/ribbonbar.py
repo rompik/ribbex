@@ -1,6 +1,6 @@
 import typing
 
-from qtpy import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 from .category import (
     RibbonCategory,
@@ -33,7 +33,7 @@ class RibbonBar(QtWidgets.QMenuBar):
     """The RibbonBar class is the top level widget that contains the ribbon."""
 
     #: Signal, the help button was clicked.
-    helpButtonClicked = QtCore.Signal(bool)
+    helpButtonClicked = QtCore.pyqtSignal(bool)
 
     #: hide the ribbon bar automatically when the mouse press outside the ribbon bar
     _autoHideRibbon = False

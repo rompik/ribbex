@@ -1,6 +1,6 @@
 import typing
 
-from qtpy import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 
 class RibbonSeparator(QtWidgets.QFrame):
@@ -39,10 +39,10 @@ class RibbonSeparator(QtWidgets.QFrame):
         self._orientation = orientation
         if orientation == QtCore.Qt.Orientation.Horizontal:
             self.setFixedHeight(width)
-            self.setSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)  # type: ignore
+            self.setSizePolicy(QtWidgets.QSizePolicy.Policy.Preferred, QtWidgets.QSizePolicy.Policy.Expanding)  # type: ignore
         else:
             self.setFixedWidth(width)
-            self.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)  # type: ignore
+            self.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Preferred)  # type: ignore
 
     def sizeHint(self) -> QtCore.QSize:
         """Return the size hint."""

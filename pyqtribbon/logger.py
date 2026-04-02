@@ -6,7 +6,7 @@ import logging
 import sys
 import traceback
 
-from qtpy import QtCore, QtWidgets
+from PyQt6 import QtCore, QtWidgets
 
 log = logging.getLogger(__name__)
 log.addHandler(logging.StreamHandler(stream=sys.stdout))

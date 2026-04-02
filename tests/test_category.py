@@ -1,5 +1,5 @@
 from pytestqt.qtbot import QtBot
-from qtpy import QtWidgets
+from PyQt6 import QtWidgets
 
 from pyqtribbon import RibbonBar
 

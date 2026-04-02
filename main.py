@@ -1,7 +1,7 @@
 import sys
 
-from qtpy import QtCore, QtGui, QtWidgets
-from qtpy.QtGui import QIcon
+from PyQt6 import QtCore, QtGui, QtWidgets
+from PyQt6.QtGui import QIcon
 
 from pyqtribbon import Large, Normal, RibbonBar, RibbonStyle
 
@@ -176,8 +176,8 @@ if __name__ == "__main__":
     popupMenu = gallery.popupMenu()
     submenu = popupMenu.addMenu(QIcon("pyqtribbon/icons/close.png"), "Submenu")
     submenu.addAction(QIcon("pyqtribbon/icons/close.png"), "Action 4")
-    popupMenu.addAction(QtGui.QIcon("pyqtribbon/icons/close.png"), "Action 1")
-    popupMenu.addAction(QtGui.QIcon("pyqtribbon/icons/close.png"), "Action 2")
+    popupMenu.addAction(QIcon("pyqtribbon/icons/close.png"), "Action 1")
+    popupMenu.addAction(QIcon("pyqtribbon/icons/close.png"), "Action 2")
     popupMenu.addSeparator()
     popupMenu.addWidget(QtWidgets.QLabel("This is a custom widget"))  # noqa
     formLayout = popupMenu.addFormLayoutWidget()
@@ -255,4 +255,4 @@ if __name__ == "__main__":
 
     window.resize(1200, 350)
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

@@ -1,6 +1,6 @@
 import typing
 
-from qtpy import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 from .menu import RibbonMenu
 from .tabbar import RibbonTabBar
@@ -31,9 +31,9 @@ class RibbonTitleWidget(QtWidgets.QFrame):
     """The title widget of the ribbon."""
 
     #: Signal, the help button was clicked.
-    helpButtonClicked = QtCore.Signal(bool)
+    helpButtonClicked = QtCore.pyqtSignal(bool)
     #: Signal, the collapse button wa clicked.
-    collapseRibbonButtonClicked = QtCore.Signal(bool)
+    collapseRibbonButtonClicked = QtCore.pyqtSignal(bool)
 
     #: Buttons
     _quickAccessButtons = []
@@ -68,7 +68,7 @@ class RibbonTitleWidget(QtWidgets.QFrame):
             parent = args[0] if len(args) > 0 else kwargs.get("parent", None)
         super().__init__(parent)
         # Tab bar layout
-        self.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)  # type: ignore
+        self.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Preferred)  # type: ignore
         self._tabBarLayout = QtWidgets.QHBoxLayout(self)
         self._tabBarLayout.setContentsMargins(0, 0, 0, 0)
         self._tabBarLayout.setSpacing(0)
@@ -113,7 +113,7 @@ class RibbonTitleWidget(QtWidgets.QFrame):
         # category tab bar
         self._tabBar = RibbonTabBar(self)
         self._tabBar.setExpanding(False)
-        self._tabBar.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)  # type: ignore
+        self._tabBar.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Preferred)  # type: ignore
         font = self._tabBar.font()
         font.setPointSize(font.pointSize() + 3)
         self._tabBar.setFont(font)
@@ -122,8 +122,10 @@ class RibbonTitleWidget(QtWidgets.QFrame):
 
         # Title label
         self._titleLabel = RibbonTitleLabel(self)
-        self._titleLabel.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)  # type: ignore
-        self._titleLabel.setAlignment(QtCore.Qt.AlignCenter | QtCore.Qt.AlignBottom)  # type: ignore
+        self._titleLabel.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Preferred)  # type: ignore
+        self._titleLabel.setAlignment(
+            QtCore.Qt.AlignmentFlag.AlignCenter | QtCore.Qt.AlignmentFlag.AlignBottom
+        )  # type: ignore
         self._titleLabel.setText(title)
         font = self._titleLabel.font()
         font.setPointSize(font.pointSize() + 3)
@@ -197,7 +199,7 @@ class RibbonTitleWidget(QtWidgets.QFrame):
         self._quickAccessButtons.append(button)
         return self._quickAccessToolBar.addWidget(button)
 
-    def removeQuickAccessButton(self, button: QtWidgets.QToolButton, action: QtWidgets.QAction):
+    def removeQuickAccessButton(self, button: QtWidgets.QToolButton, action: QtGui.QAction):
         """Remove a widget from the quick access bar.
 
         :param button: The button to remove.
@@ -245,7 +247,7 @@ class RibbonTitleWidget(QtWidgets.QFrame):
         self._rightToolButtons.append(button)
         return self._rightToolBar.addWidget(button)
 
-    def removeRightToolButton(self, button: QtWidgets.QToolButton, action: QtWidgets.QAction):
+    def removeRightToolButton(self, button: QtWidgets.QToolButton, action: QtGui.QAction):
         """Remove a widget from the right button bar.
 
         :param button: The button to remove.

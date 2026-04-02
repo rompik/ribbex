@@ -1,5 +1,5 @@
 from pytestqt.qtbot import QtBot
-from qtpy import QtCore
+from PyQt6 import QtCore
 
 from pyqtribbon.titlewidget import RibbonTitleWidget
 

@@ -1,6 +1,6 @@
 import sys
 
-from qtpy import QtGui, QtWidgets
+from PyQt6 import QtGui, QtWidgets
 
 from pyqtribbon import RibbonBar
 from pyqtribbon.screenshotwindow import RibbonScreenShotWindow
@@ -18,4 +18,4 @@ if __name__ == "__main__":
     window.resize(1000, 250)
     window.show()
 
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

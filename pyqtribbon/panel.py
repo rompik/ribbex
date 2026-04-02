@@ -5,7 +5,7 @@ import re
 from typing import Any, Callable, Dict, List, Union, overload
 
 import numpy as np
-from qtpy import QtCore, QtGui, QtWidgets
+from PyQt6 import QtCore, QtGui, QtWidgets
 
 from .constants import (
     ColumnWise,
@@ -87,7 +87,7 @@ class RibbonPanelItemWidget(QtWidgets.QFrame):
         self.layout().setSpacing(0)
         self.layout().setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         self.layout().setSizeConstraint(QtWidgets.QLayout.SizeConstraint.SetMaximumSize)
-        self.setSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)  # type: ignore
+        self.setSizePolicy(QtWidgets.QSizePolicy.Policy.Expanding, QtWidgets.QSizePolicy.Policy.Expanding)  # type: ignore
 
     def addWidget(self, widget):
         """Add a widget to the panel item.
@@ -126,7 +126,7 @@ class RibbonPanel(QtWidgets.QFrame):
     _titleHeight: int = 15
 
     # Panel options signal
-    panelOptionClicked = QtCore.Signal(bool)
+    panelOptionClicked = QtCore.pyqtSignal(bool)
 
     @overload
     def __init__(self, title: str = "", maxRows: int = 6, showPanelOptionButton=True, parent=None):

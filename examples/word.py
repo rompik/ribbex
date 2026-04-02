@@ -1,7 +1,7 @@
 import sys
 
-from qtpy import QtGui, QtWidgets
-from qtpy.QtGui import QIcon
+from PyQt6 import QtGui, QtWidgets
+from PyQt6.QtGui import QIcon
 
 from pyqtribbon import RibbonBar, RowWise
 
@@ -70,4 +70,4 @@ if __name__ == "__main__":
 
     window.resize(1500, 1000)
     window.show()
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
