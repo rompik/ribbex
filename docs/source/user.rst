@@ -11,7 +11,7 @@ you can use the `setMenuBar` method of :py:class:`~PyQt5.QtWidgets.QMainWindow` 
 
 .. code-block:: python
 
-    from pyqtribbon import RibbonBar
+    from pyqt_ribbon import RibbonBar
 
     window = QtWidgets.QMainWindow()
     ribbon = RibbonBar()
@@ -36,7 +36,7 @@ Customize Ribbon Bar
 General Setups
 ~~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.ribbonbar
+.. currentmodule:: pyqt_ribbon.ribbonbar
 
 .. autosummary::
 
@@ -51,7 +51,7 @@ General Setups
 Setup Application Button
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.ribbonbar
+.. currentmodule:: pyqt_ribbon.ribbonbar
 
 .. autosummary::
 
@@ -62,7 +62,7 @@ Setup Application Button
 Setup Title
 ~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.ribbonbar
+.. currentmodule:: pyqt_ribbon.ribbonbar
 
 .. autosummary::
 
@@ -75,7 +75,7 @@ Setup Title
 Setup Category Tab Bar
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.ribbonbar
+.. currentmodule:: pyqt_ribbon.ribbonbar
 
 .. autosummary::
 
@@ -84,7 +84,7 @@ Setup Category Tab Bar
 Setup Quick Access Bar
 ~~~~~~~~~~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.ribbonbar
+.. currentmodule:: pyqt_ribbon.ribbonbar
 
 .. autosummary::
 
@@ -95,7 +95,7 @@ Setup Quick Access Bar
 Setup Right Tool Bar
 ~~~~~~~~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.ribbonbar
+.. currentmodule:: pyqt_ribbon.ribbonbar
 
 .. autosummary::
 
@@ -125,7 +125,7 @@ You can get a window like this:
 Manage Categories
 ~~~~~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.ribbonbar
+.. currentmodule:: pyqt_ribbon.ribbonbar
 
 .. autosummary::
 
@@ -148,7 +148,7 @@ Customize Categories
 Setup Styles
 ~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.category
+.. currentmodule:: pyqt_ribbon.category
 
 .. autosummary::
 
@@ -158,7 +158,7 @@ Setup Styles
 Manage Panels
 ~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.category
+.. currentmodule:: pyqt_ribbon.category
 
 .. autosummary::
 
@@ -188,7 +188,7 @@ Customize Panels
 Setup Title Label
 ~~~~~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.panel
+.. currentmodule:: pyqt_ribbon.panel
 
 .. autosummary::
 
@@ -198,7 +198,7 @@ Setup Title Label
 Setup Panel Option Button
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.panel
+.. currentmodule:: pyqt_ribbon.panel
 
 .. autosummary::
 
@@ -209,7 +209,7 @@ Setup Panel Option Button
 Add Widgets to Panels
 ~~~~~~~~~~~~~~~~~~~~~
 
-.. currentmodule:: pyqtribbon.panel
+.. currentmodule:: pyqt_ribbon.panel
 
 .. autosummary::
 

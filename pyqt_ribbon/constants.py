@@ -16,12 +16,12 @@ Context = RibbonCategoryStyle.Context
 
 #: A list of context category colors
 contextColors = [
-    QtGui.QColor(201, 89, 156),  # 玫红
-    QtGui.QColor(242, 203, 29),  # 黄
-    QtGui.QColor(255, 157, 0),  # 橙
-    QtGui.QColor(14, 81, 167),  # 蓝
-    QtGui.QColor(228, 0, 69),  # 红
-    QtGui.QColor(67, 148, 0),  # 绿
+    QtGui.QColor(201, 89, 156),  # Rose red
+    QtGui.QColor(242, 203, 29),  # Yellow
+    QtGui.QColor(255, 157, 0),  # Orange
+    QtGui.QColor(14, 81, 167),  # Blue
+    QtGui.QColor(228, 0, 69),  # Red
+    QtGui.QColor(67, 148, 0),  # Green
 ]
 
 

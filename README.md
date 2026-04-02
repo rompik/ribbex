@@ -26,18 +26,17 @@ pip install pyqtribbon
 ```
 
 You can also install the package from source:
+
 ```shell
 pip install git+https://github.com/haiiliin/pyqtribbon.git@main
 ```
 
 ## Python and PyQt6 Requirements
 
-| [Python][py] | [PyQt6][PyQt6] |
-|:------------:|:------------------:|
-|   3.10       | :white_check_mark: |
-|   3.11       | :white_check_mark: |
-|   3.12       | :white_check_mark: |
-|   3.13       | :white_check_mark: |
+- [Python][py] 3.10 with [PyQt6][PyQt6]
+- [Python][py] 3.11 with [PyQt6][PyQt6]
+- [Python][py] 3.12 with [PyQt6][PyQt6]
+- [Python][py] 3.13 with [PyQt6][PyQt6]
 
 [py]: https://www.python.org/
 [PyQt6]: https://pypi.org/project/PyQt6/
@@ -66,4 +65,4 @@ The ribbon is first introduced by Microsoft in the 2000's. It is a toolbar with 
 
 ## Screenshots
 
-![An Example](main.png)
+![An Example](docs/source/_images/main-interface.png)

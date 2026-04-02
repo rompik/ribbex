@@ -1,8 +1,8 @@
 from pytestqt.qtbot import QtBot
 from PyQt6 import QtWidgets
 
-from pyqtribbon import RibbonBar
-from pyqtribbon.gallery import RibbonGallery
+from pyqt_ribbon import RibbonBar
+from pyqt_ribbon.gallery import RibbonGallery
 
 
 def test_ribbonbar(qtbot: QtBot):

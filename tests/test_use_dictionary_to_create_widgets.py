@@ -1,7 +1,7 @@
 from pytestqt.qtbot import QtBot
 from PyQt6 import QtWidgets
 
-from pyqtribbon import RibbonBar, RibbonCategoryStyle
+from pyqt_ribbon import RibbonBar, RibbonCategoryStyle
 
 
 def test_filemenu(qtbot: QtBot):

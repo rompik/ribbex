@@ -1,7 +1,7 @@
 from pytestqt.qtbot import QtBot
 from PyQt6 import QtCore
 
-from pyqtribbon.titlewidget import RibbonTitleWidget
+from pyqt_ribbon.titlewidget import RibbonTitleWidget
 
 
 def test_titlewidget(qtbot: QtBot):

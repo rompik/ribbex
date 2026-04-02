@@ -1,9 +1,9 @@
 from pytestqt.qtbot import QtBot
 from PyQt6 import QtWidgets
 
-from pyqtribbon import RibbonBar
-from pyqtribbon.panel import RibbonPanel
-from pyqtribbon.toolbutton import RibbonToolButton
+from pyqt_ribbon import RibbonBar
+from pyqt_ribbon.panel import RibbonPanel
+from pyqt_ribbon.toolbutton import RibbonToolButton
 
 
 def test_categories(qtbot: QtBot):

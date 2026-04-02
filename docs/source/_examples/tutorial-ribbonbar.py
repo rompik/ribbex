@@ -4,9 +4,9 @@ from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QFont, QIcon
 from PyQt6.QtWidgets import QApplication, QLabel, QVBoxLayout, QWidget
 
-from pyqtribbon import RibbonBar
-from pyqtribbon.screenshotwindow import RibbonScreenShotWindow
-from pyqtribbon.utils import DataFile
+from pyqt_ribbon import RibbonBar
+from pyqt_ribbon.screenshotwindow import RibbonScreenShotWindow
+from pyqt_ribbon.utils import DataFile
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

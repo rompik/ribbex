@@ -2,8 +2,8 @@ import sys
 
 from PyQt6 import QtGui, QtWidgets
 
-from pyqtribbon import RibbonBar
-from pyqtribbon.screenshotwindow import RibbonScreenShotWindow
+from pyqt_ribbon import RibbonBar
+from pyqt_ribbon.screenshotwindow import RibbonScreenShotWindow
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)

@@ -3,7 +3,7 @@ import sys
 from PyQt6 import QtGui, QtWidgets
 from PyQt6.QtGui import QIcon
 
-from pyqtribbon import RibbonBar, RowWise
+from pyqt_ribbon import RibbonBar, RowWise
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
