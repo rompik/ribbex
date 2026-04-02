@@ -380,9 +380,9 @@ class RibbonPanel(QtWidgets.QFrame):
         """
         widgets = {}  # type: Dict[str, QtWidgets.QWidget]
         for key, widget_data in data.items():
-            type = widget_data.pop("type", "").capitalize()
-            method = getattr(self, f"add{type}", None)  # type: Callable
-            assert callable(method), f"Method add{type} is not callable or does not exist"
+            widget_type = widget_data.pop("type", "").capitalize()
+            method = getattr(self, f"add{widget_type}", None)  # type: Callable
+            assert callable(method), f"Method add{widget_type} is not callable or does not exist"
             args = widget_data.get("args", ())
             kwargs = widget_data.get("kwargs", widget_data.get("arguments", {}))
             widgets[key] = method(*args, **kwargs)
@@ -488,12 +488,18 @@ class RibbonPanel(QtWidgets.QFrame):
         style = rowSpan
         button = RibbonToolButton(self)
         button.setButtonStyle(style)
-        button.setText(text) if text else None
-        button.setIcon(icon) if icon else None
-        button.clicked.connect(slot) if slot else None  # type: ignore
-        button.setShortcut(shortcut) if shortcut else None
-        button.setToolTip(tooltip) if tooltip else None
-        button.setStatusTip(statusTip) if statusTip else None
+        if text:
+            button.setText(text)
+        if icon:
+            button.setIcon(icon)
+        if slot:
+            button.clicked.connect(slot)  # type: ignore
+        if shortcut:
+            button.setShortcut(shortcut)
+        if tooltip:
+            button.setToolTip(tooltip)
+        if statusTip:
+            button.setStatusTip(statusTip)
         maximumHeight = (
             self.height()
             - self._titleLabel.sizeHint().height()
