@@ -6,7 +6,7 @@ requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pyqtribbon"
+name = "pyqt_ribbon"
 authors = [
   { name="WANG Hailin", email="hailin.wang@connect.polyu.hk" },
 ]
@@ -28,7 +28,9 @@ classifiers = [
 dependencies = ["PyQt6"]
 
 [project.urls]
-"GitHub" = "https://github.com/haiiliin/pyqtribbon"
+"GitHub" = "https://github.com/rompik/pyqt_ribbon"
+"Repository" = "https://github.com/rompik/pyqt_ribbon"
+"Issues" = "https://github.com/rompik/pyqt_ribbon/issues"
 "Documentation" = "https://pyqribbon.readthedocs.io/en/stable/"
 
 [dependency-groups]
