@@ -6,4 +6,4 @@ API References
     :caption: Packages
     :maxdepth: 1
 
-    apidoc/pyqt_ribbon
+    apidoc/open_pyqt_ribbon

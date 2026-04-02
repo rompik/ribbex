@@ -14,7 +14,7 @@ import inspect
 import os
 import sys
 
-import pyqt_ribbon
+import open_pyqt_ribbon
 
 sys.path.insert(0, os.path.abspath("../../"))
 
@@ -25,7 +25,7 @@ copyright = "2022, WANG Hailin"
 author = "WANG Hailin"
 
 # The full version, including alpha/beta/rc tags
-release = version = pyqt_ribbon.__version__
+release = version = open_pyqt_ribbon.__version__
 
 
 # -- General configuration ---------------------------------------------------
@@ -97,7 +97,7 @@ hoverxref_intersphinx = [
 ]
 
 # sphinxcontrib-apidoc configuration
-apidoc_module_dir = "../../pyqt_ribbon"
+apidoc_module_dir = "../../open_pyqt_ribbon"
 apidoc_output_dir = "apidoc"
 apidoc_excluded_paths = []
 apidoc_separate_modules = True

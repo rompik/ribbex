@@ -4,8 +4,8 @@ from PyQt6 import QtGui
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import QApplication
 
-from pyqt_ribbon import RibbonBar, RibbonCategoryStyle
-from pyqt_ribbon.screenshotwindow import RibbonScreenShotWindow
+from open_pyqt_ribbon import RibbonBar, RibbonCategoryStyle
+from open_pyqt_ribbon.screenshotwindow import RibbonScreenShotWindow
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

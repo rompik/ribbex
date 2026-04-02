@@ -56,22 +56,22 @@ docs = [
 ]
 
 [tool.setuptools]
-packages = ['pyqt_ribbon']
+packages = ['open_pyqt_ribbon']
 
 [tool.setuptools.package-data]
-pyqt_ribbon = ["icons/*", "styles/*"]
+open_pyqt_ribbon = ["icons/*", "styles/*"]
 
 [tool.setuptools_scm]
-write_to = "pyqt_ribbon/_version.py"
+write_to = "open_pyqt_ribbon/_version.py"
 
 [tool.pytest.ini_options]
-testpaths = ["pyqt_ribbon", "tests"]
-addopts = "-rf -s --cov=pyqt_ribbon --cov-report=xml --cov-report=html --cov-report=term-missing --doctest-modules"
+testpaths = ["open_pyqt_ribbon", "tests"]
+addopts = "-rf -s --cov=open_pyqt_ribbon --cov-report=xml --cov-report=html --cov-report=term-missing --doctest-modules"
 
 [tool.black]
 line-length = 120
 target-version = ['py38', 'py39', 'py310', 'py311', 'py312', 'py313']
-include = '(pyqt_ribbon/.*\.py|tests/.*\.py|docs/source/conf\.py)'
+include = '(open_pyqt_ribbon/.*\.py|tests/.*\.py|docs/source/conf\.py)'
 
 [tool.isort]
 profile = "black"
