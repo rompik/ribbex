@@ -138,6 +138,6 @@ dmypy.json
 Thumbs.db
 
 # Project-specific
-pyqt_ribbon/_version.py
+ribbex/_version.py
 docs/source/apidoc
 .pdm-python

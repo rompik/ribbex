@@ -47,7 +47,7 @@ class RibbonTitleWidget(QtWidgets.QFrame):
     _window_point = None
 
     @typing.overload
-    def __init__(self, title="PyQtRibbon", parent=None):
+    def __init__(self, title="ribbex", parent=None):
         pass
 
     @typing.overload
@@ -61,10 +61,10 @@ class RibbonTitleWidget(QtWidgets.QFrame):
         :param parent: The parent widget.
         """
         if (args and not isinstance(args[0], QtWidgets.QWidget)) or ("title" in kwargs):
-            title = args[0] if len(args) > 0 else kwargs.get("title", "PyQtRibbon")
+            title = args[0] if len(args) > 0 else kwargs.get("title", "ribbex")
             parent = args[1] if len(args) > 1 else kwargs.get("parent", None)
         else:
-            title = "PyQtRibbon"
+            title = "ribbex"
             parent = args[0] if len(args) > 0 else kwargs.get("parent", None)
         super().__init__(parent)
         # Tab bar layout
@@ -77,8 +77,8 @@ class RibbonTitleWidget(QtWidgets.QFrame):
         self._applicationButton = RibbonApplicationButton()  # type: ignore
         self._applicationButton.setIcon(QtGui.QIcon(DataFile("icons/python.png")))
         self._applicationButton.setIconSize(QtCore.QSize(self._quickAccessButtonHeight, self._quickAccessButtonHeight))
-        self._applicationButton.setText("PyQtRibbon")
-        self._applicationButton.setToolTip("PyQtRibbon")
+        self._applicationButton.setText("ribbex")
+        self._applicationButton.setToolTip("ribbex")
 
         self._quickAccessToolBar = QtWidgets.QToolBar()
         self._quickAccessToolBar.setIconSize(QtCore.QSize(self._quickAccessButtonHeight, self._quickAccessButtonHeight))

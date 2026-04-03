@@ -1,34 +1,34 @@
-# PyQtRibbon
+# ribbex
 
 [![Documentation Status](https://readthedocs.org/projects/pyqribbon/badge/?version=latest)](https://pyqribbon.readthedocs.io/en/stable/?badge=latest)
-[![Tests](https://github.com/rompik/open_pyqt_ribbon/actions/workflows/tests.yml/badge.svg)](https://github.com/rompik/open_pyqt_ribbon/actions/workflows/tests.yml)
-[![PyPI](https://github.com/rompik/open_pyqt_ribbon/actions/workflows/publish.yml/badge.svg)](https://github.com/rompik/open_pyqt_ribbon/actions/workflows/publish.yml)
-[![Coverage Status](https://coveralls.io/repos/github/rompik/open_pyqt_ribbon/badge.svg?branch=main)](https://coveralls.io/github/rompik/open_pyqt_ribbon?branch=main)
+[![Tests](https://github.com/rompik/ribbex/actions/workflows/tests.yml/badge.svg)](https://github.com/rompik/ribbex/actions/workflows/tests.yml)
+[![PyPI](https://github.com/rompik/ribbex/actions/workflows/publish.yml/badge.svg)](https://github.com/rompik/ribbex/actions/workflows/publish.yml)
+[![Coverage Status](https://coveralls.io/repos/github/rompik/ribbex/badge.svg?branch=main)](https://coveralls.io/github/rompik/ribbex?branch=main)
 
-[![PyPI license](https://img.shields.io/pypi/l/pyqtribbon.svg)](https://github.com/rompik/open_pyqt_ribbon/blob/main/LICENSE)
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pyqtribbon.svg)](https://www.python.org/)
-[![PyPI](https://img.shields.io/pypi/v/pyqtribbon)](https://pypi.org/project/pyqtribbon/)
-[![PyPI download month](https://img.shields.io/pypi/dm/pyqtribbon.svg)](https://pypi.org/project/pyqtribbon/)
+[![PyPI license](https://img.shields.io/pypi/l/ribbex.svg)](https://github.com/rompik/ribbex/blob/main/LICENSE)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/ribbex.svg)](https://www.python.org/)
+[![PyPI](https://img.shields.io/pypi/v/ribbex)](https://pypi.org/project/ribbex/)
+[![PyPI download month](https://img.shields.io/pypi/dm/ribbex.svg)](https://pypi.org/project/ribbex/)
 
 Ribbon Bar for PyQt6 applications.
 
-- GitHub Repository: [github.com/rompik/open_pyqt_ribbon](https://github.com/rompik/open_pyqt_ribbon/).
+- GitHub Repository: [github.com/rompik/ribbex](https://github.com/rompik/ribbex/).
 - Documentation: [pyqribbon.readthedocs.io/en/stable](https://pyqribbon.readthedocs.io/en/stable/).
-- Python Package Index: [pypi.org/project/pyqtribbon](https://pypi.org/project/pyqtribbon/).
+- Python Package Index: [pypi.org/project/ribbex](https://pypi.org/project/ribbex/).
 - Read the Docs: [readthedocs.org/projects/pyqribbon](https://readthedocs.org/projects/pyqribbon/).
 
 ## Installation
 
-PyQtRibbon is distributed to [PyPI](https://pypi.org/project/pyqtribbon/), you can use pip to install it:
+ribbex is distributed to [PyPI](https://pypi.org/project/ribbex/), you can use pip to install it:
 
 ```shell
-pip install pyqtribbon
+pip install ribbex
 ```
 
 You can also install the package from source:
 
 ```shell
-pip install git+https://github.com/rompik/open_pyqt_ribbon.git@main
+pip install git+https://github.com/rompik/ribbex.git@main
 ```
 
 ## Python and PyQt6 Requirements

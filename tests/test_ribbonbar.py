@@ -1,7 +1,7 @@
 from pytestqt.qtbot import QtBot
 from PyQt6 import QtWidgets
 
-from open_pyqt_ribbon import RibbonBar
+from ribbex import RibbonBar
 
 
 def test_ribbonbar(qtbot: QtBot):

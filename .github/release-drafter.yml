@@ -51,5 +51,5 @@ template: |
 
   $CHANGES
 
-  **Full Changelog**: https://github.com/rompik/open_pyqt_ribbon/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
+  **Full Changelog**: https://github.com/rompik/ribbex/compare/$PREVIOUS_TAG...v$RESOLVED_VERSION
 

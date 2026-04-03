@@ -6,7 +6,7 @@ requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pyqt_ribbon"
+name = "ribbex"
 authors = [
   { name="WANG Hailin", email="hailin.wang@connect.polyu.hk" },
 ]
@@ -28,9 +28,9 @@ classifiers = [
 dependencies = ["PyQt6"]
 
 [project.urls]
-"GitHub" = "https://github.com/rompik/open_pyqt_ribbon"
-"Repository" = "https://github.com/rompik/open_pyqt_ribbon"
-"Issues" = "https://github.com/rompik/open_pyqt_ribbon/issues"
+"GitHub" = "https://github.com/rompik/ribbex"
+"Repository" = "https://github.com/rompik/ribbex"
+"Issues" = "https://github.com/rompik/ribbex/issues"
 "Documentation" = "https://pyqribbon.readthedocs.io/en/stable/"
 
 [dependency-groups]
@@ -56,22 +56,22 @@ docs = [
 ]
 
 [tool.setuptools]
-packages = ['open_pyqt_ribbon']
+packages = ['ribbex']
 
 [tool.setuptools.package-data]
-open_pyqt_ribbon = ["icons/*", "styles/*"]
+ribbex = ["icons/*", "styles/*"]
 
 [tool.setuptools_scm]
-write_to = "open_pyqt_ribbon/_version.py"
+write_to = "ribbex/_version.py"
 
 [tool.pytest.ini_options]
-testpaths = ["open_pyqt_ribbon", "tests"]
-addopts = "-rf -s --cov=open_pyqt_ribbon --cov-report=xml --cov-report=html --cov-report=term-missing --doctest-modules"
+testpaths = ["ribbex", "tests"]
+addopts = "-rf -s --cov=ribbex --cov-report=xml --cov-report=html --cov-report=term-missing --doctest-modules"
 
 [tool.black]
 line-length = 120
 target-version = ['py38', 'py39', 'py310', 'py311', 'py312', 'py313']
-include = '(open_pyqt_ribbon/.*\.py|tests/.*\.py|docs/source/conf\.py)'
+include = '(ribbex/.*\.py|tests/.*\.py|docs/source/conf\.py)'
 
 [tool.isort]
 profile = "black"
