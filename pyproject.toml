@@ -14,11 +14,14 @@ authors = [
 description = "Ribbon Bar for PyQt6 applications"
 readme = "README.md"
 dynamic = ["version"]
-requires-python = ">=3.13"
+requires-python = ">=3.10"
 license = "MIT"
 classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Operating System :: OS Independent",
     "Development Status :: 4 - Beta",
@@ -68,7 +71,7 @@ addopts = "-rf -s --cov=ribbex --cov-report=xml --cov-report=html --cov-report=t
 
 [tool.black]
 line-length = 120
-target-version = ['py313']
+target-version = ['py310']
 include = '(ribbex/.*\.py|tests/.*\.py|docs/source/conf\.py)'
 
 [tool.isort]

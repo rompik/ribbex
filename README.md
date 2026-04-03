@@ -32,7 +32,7 @@ pip install git+https://github.com/rompik/ribbex.git@main
 
 ## Python and PyQt6 Requirements
 
-- [Python][py] 3.13 with [PyQt6][PyQt6]
+- [Python][py] 3.10+ with [PyQt6][PyQt6]
 
 [py]: https://www.python.org/
 [PyQt6]: https://pypi.org/project/PyQt6/
