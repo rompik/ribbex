@@ -1,9 +1,9 @@
-# Consolidated dependencies from actual imports in codebase (Python 3.10+)
-
 # Runtime
 PyQt6
 setuptools-scm
 
-# Used in tests/examples/docs currently
+# Development / testing
 pytest
 pytest-qt
+pytest-cov
+coveralls
