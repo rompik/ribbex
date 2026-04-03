@@ -15,11 +15,11 @@ description = "Ribbon Bar for PyQt6 applications"
 readme = "README.md"
 dynamic = ["version"]
 requires-python = ">=3.13"
+license = "MIT"
 classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.13",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Development Status :: 4 - Beta",
 ]
@@ -54,7 +54,7 @@ docs = [
 ]
 
 [tool.setuptools]
-packages = ['ribbex']
+packages = ['ribbex', 'ribbex.icons', 'ribbex.styles']
 
 [tool.setuptools.package-data]
 ribbex = ["icons/*", "styles/*"]
